@@ -2,6 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/UnoAnimationIssue/UnoAnimationIssue.Droid/bin
 /UnoAnimationIssue/UnoAnimationIssue.Droid/obj
 /UnoAnimationIssue/UnoAnimationIssue.iOS/bin
 /UnoAnimationIssue/UnoAnimationIssue.iOS/obj

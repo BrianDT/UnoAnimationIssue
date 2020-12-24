@@ -50,13 +50,63 @@ namespace UnoAnimationIssue
         }
 
         /// <summary>
+        /// Event handler for start double colour animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_ColourAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("StaticColourAndSize");
+        }
+
+        /// <summary>
+        /// Event handler for start key frame colour animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_ColourKFAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("StaticColourAndSizeKF");
+        }
+
+        /// <summary>
+        /// Event handler for start double colour animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_ColourAndPositionAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("ColourAndPosition");
+        }
+
+        /// <summary>
+        /// Event handler for start key frame colour animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_ColourAndPositionKFAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("ColourAndPositionKF");
+        }
+
+        /// <summary>
         /// Event handler for start double animation.
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The event args.</param>
-        private void Start_DoubleAnimation_Click(object sender, RoutedEventArgs e)
+        private void Start_ScaleAnimation_Click(object sender, RoutedEventArgs e)
         {
-            this.ChangeState("Static");
+            this.ChangeState("StaticTransform");
+        }
+
+        /// <summary>
+        /// Event handler for start double animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_ScaleKFAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("StaticTransformKF");
         }
 
         /// <summary>
@@ -64,9 +114,39 @@ namespace UnoAnimationIssue
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The event args.</param>
-        private void Start_DoubleAnimationUsingKeyFrames_Click(object sender, RoutedEventArgs e)
+        private void Start_TranslationAnimation_Click(object sender, RoutedEventArgs e)
         {
-            this.ChangeState("Moving");
+            this.ChangeState("MovingTransform");
+        }
+
+        /// <summary>
+        /// Event handler for start double key frame animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_TranslationKFAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("MovingTransformKF");
+        }
+
+        /// <summary>
+        /// Event handler for start double key frame animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_CombinedAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("CombinedTransform");
+        }
+
+        /// <summary>
+        /// Event handler for start double key frame animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_CombinedKFAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("CombinedTransformKF");
         }
 
         /// <summary>
