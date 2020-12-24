@@ -2,4 +2,21 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/UnoAnimationIssue.Droid/obj
+/UnoAnimationIssue/UnoAnimationIssue.Droid/obj
+/UnoAnimationIssue/UnoAnimationIssue.iOS/bin
+/UnoAnimationIssue/UnoAnimationIssue.iOS/obj
+/UnoAnimationIssue/UnoAnimationIssue.macOS/bin
+/UnoAnimationIssue/UnoAnimationIssue.macOS/obj
+/UnoAnimationIssue/UnoAnimationIssue.Skia.Gtk/bin
+/UnoAnimationIssue/UnoAnimationIssue.Skia.Gtk/obj
+/UnoAnimationIssue/UnoAnimationIssue.Skia.Tizen/bin
+/UnoAnimationIssue/UnoAnimationIssue.Skia.Tizen/obj
+/UnoAnimationIssue/UnoAnimationIssue.Skia.Wpf/bin
+/UnoAnimationIssue/UnoAnimationIssue.Skia.Wpf/obj
+/UnoAnimationIssue/UnoAnimationIssue.Skia.Wpf.Host/bin
+/UnoAnimationIssue/UnoAnimationIssue.Skia.Wpf.Host/obj
+/UnoAnimationIssue/UnoAnimationIssue.UWP/bin
+/UnoAnimationIssue/UnoAnimationIssue.UWP/obj
+/UnoAnimationIssue/UnoAnimationIssue.Wasm/bin
+/UnoAnimationIssue/UnoAnimationIssue.Wasm/obj
+/.vs
