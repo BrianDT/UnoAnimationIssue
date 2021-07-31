@@ -56,7 +56,7 @@ namespace UnoAnimationIssue
         /// <param name="e">The event args.</param>
         private void Start_ColourAnimation_Click(object sender, RoutedEventArgs e)
         {
-            this.ChangeState("StaticColourAndSize");
+            this.ChangeState("ColourAndSize");
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace UnoAnimationIssue
         /// <param name="e">The event args.</param>
         private void Start_ColourKFAnimation_Click(object sender, RoutedEventArgs e)
         {
-            this.ChangeState("StaticColourAndSizeKF");
+            this.ChangeState("ColourAndSizeKF");
         }
 
         /// <summary>
@@ -89,6 +89,36 @@ namespace UnoAnimationIssue
             this.ChangeState("ColourAndPositionKF");
         }
 
+        private void Start_OpacityAndSizeAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("OpacityAndSize");
+        }
+
+        private void Start_OpacityAndSizeKFAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("OpacityAndSizeKF");
+        }
+
+        /// <summary>
+        /// Event handler for start opacity and position animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_OpacityAndPositionAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("OpacityAndPosition");
+        }
+
+        /// <summary>
+        /// Event handler for start opacity and position animation.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event args.</param>
+        private void Start_OpacityAndPositionKFAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("OpacityAndPositionKF");
+        }
+
         /// <summary>
         /// Event handler for start double animation.
         /// </summary>
@@ -96,7 +126,7 @@ namespace UnoAnimationIssue
         /// <param name="e">The event args.</param>
         private void Start_ScaleAnimation_Click(object sender, RoutedEventArgs e)
         {
-            this.ChangeState("StaticTransform");
+            this.ChangeState("ScaleTransform");
         }
 
         /// <summary>
@@ -106,7 +136,7 @@ namespace UnoAnimationIssue
         /// <param name="e">The event args.</param>
         private void Start_ScaleKFAnimation_Click(object sender, RoutedEventArgs e)
         {
-            this.ChangeState("StaticTransformKF");
+            this.ChangeState("ScaleTransformKF");
         }
 
         /// <summary>
@@ -116,7 +146,7 @@ namespace UnoAnimationIssue
         /// <param name="e">The event args.</param>
         private void Start_TranslationAnimation_Click(object sender, RoutedEventArgs e)
         {
-            this.ChangeState("MovingTransform");
+            this.ChangeState("TranslateTransform");
         }
 
         /// <summary>
@@ -126,7 +156,17 @@ namespace UnoAnimationIssue
         /// <param name="e">The event args.</param>
         private void Start_TranslationKFAnimation_Click(object sender, RoutedEventArgs e)
         {
-            this.ChangeState("MovingTransformKF");
+            this.ChangeState("TranslateTransformKF");
+        }
+
+        private void Start_OpacitySizeTranslationAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("OpacitySizeAndTranslateTransform");
+        }
+
+        private void Start_OpacitySizeTranslationKFAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.ChangeState("OpacitySizeAndTranslateTransformKF");
         }
 
         /// <summary>
