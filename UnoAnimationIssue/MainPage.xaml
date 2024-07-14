@@ -7,8 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 	<Page.Resources>
-		<Color x:Key="SmokeColor">#FF3C3C3C</Color>
-		<SolidColorBrush x:Key="SmokeBrush" Color="{StaticResource SmokeColor}"/>
         <Style x:Key="AnnimationButton" TargetType="Button">
             <Setter Property="Margin" Value="0,4,0,0"/>
             <Setter Property="Padding" Value="8,4,8,4"/>
@@ -69,7 +67,7 @@
 			<Ellipse x:Name="ring" Canvas.Left="0" Canvas.Top="0" 
                      Width="{x:Bind VM.Diameter, Mode=OneWay}" 
                      Height="{x:Bind VM.Diameter, Mode=OneWay}" 
-                     Fill="{StaticResource SmokeBrush}" >
+                     Fill="{StaticResource ShapeBackgroundBrush}" >
 				<Ellipse.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform x:Name="ringScaleTransform" ScaleX="1" ScaleY="1" CenterX="5" CenterY="5"/>
@@ -80,18 +78,18 @@
 		</Canvas>
 
 		<VisualStateManager.VisualStateGroups>
-			<VisualStateGroup x:Name="SmokeStates">
+			<VisualStateGroup x:Name="ShapeStates">
 				<VisualState x:Name="Shutoff" />
                 <VisualState x:Name="ColourAndSize" >
                     <Storyboard Duration="0:0:5" RepeatBehavior="Forever">
-                        <ColorAnimation Storyboard.TargetName="ring" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" Duration="0:0:5" From="{ThemeResource SmokeColor}" To="Transparent"/>
+            <ColorAnimation Storyboard.TargetName="ring" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" Duration="0:0:5" From="{ThemeResource ShapeBackgroundColor}" To="Transparent"/>
                         <DoubleAnimation Storyboard.TargetName="ring" Storyboard.TargetProperty="Width" Duration="0:0:5" From="{x:Bind VM.Diameter, Mode=OneWay}" To="80.0" EnableDependentAnimation="True"/>
                         <DoubleAnimation Storyboard.TargetName="ring" Storyboard.TargetProperty="Height" Duration="0:0:5" From="{x:Bind VM.Diameter, Mode=OneWay}" To="80.0" EnableDependentAnimation="True"/>
                     </Storyboard>
                 </VisualState>
                 <VisualState x:Name="ColourAndPosition" >
                     <Storyboard Duration="0:0:5" RepeatBehavior="Forever">
-                        <ColorAnimation Storyboard.TargetName="ring" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" Duration="0:0:5" From="{ThemeResource SmokeColor}" To="Transparent"/>
+            <ColorAnimation Storyboard.TargetName="ring" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" Duration="0:0:5" From="{ThemeResource ShapeBackgroundColor}" To="Transparent"/>
                         <DoubleAnimation Storyboard.TargetName="ring" Storyboard.TargetProperty="(Canvas.Left)" Duration="0:0:5" From="0.0" To="50.0" EnableDependentAnimation="True"/>
                         <DoubleAnimation Storyboard.TargetName="ring" Storyboard.TargetProperty="(Canvas.Top)" Duration="0:0:5" From="0.0" To="50.0" EnableDependentAnimation="True"/>
                     </Storyboard>
@@ -147,7 +145,7 @@
                 <VisualState x:Name="ColourAndSizeKF">
                     <Storyboard Duration="0:0:5" RepeatBehavior="Forever">
                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="ring" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)">
-                        <EasingColorKeyFrame KeyTime="0" Value="{ThemeResource SmokeColor}"/>
+              <EasingColorKeyFrame KeyTime="0" Value="{ThemeResource ShapeBackgroundColor}"/>
                         <EasingColorKeyFrame KeyTime="0:0:5" Value="Transparent"/>
                         </ColorAnimationUsingKeyFrames>
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ring" Storyboard.TargetProperty="Width" EnableDependentAnimation="True">
@@ -163,7 +161,7 @@
                 <VisualState x:Name="ColourAndPositionKF">
                     <Storyboard Duration="0:0:5" RepeatBehavior="Forever">
                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="ring" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)">
-                            <EasingColorKeyFrame KeyTime="0" Value="{ThemeResource SmokeColor}"/>
+              <EasingColorKeyFrame KeyTime="0" Value="{ThemeResource ShapeBackgroundColor}"/>
                             <EasingColorKeyFrame KeyTime="0:0:5" Value="Transparent"/>
                         </ColorAnimationUsingKeyFrames>
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ring" Storyboard.TargetProperty="(Canvas.Left)" EnableDependentAnimation="True">
