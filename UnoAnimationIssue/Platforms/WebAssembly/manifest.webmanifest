@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "UnoAnimationIssue",
+  "display": "standalone",
+  "name": "UnoAnimationIssue",
+  "short_name": "UnoAnimationIssue",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
